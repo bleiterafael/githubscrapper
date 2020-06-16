@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.API", "RBL.GitHub.Scrapper.API\RBL.GitHub.Scrapper.API.csproj", "{A9528878-85CB-4E9E-9352-DD0336D9F4E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.Business", "RBL.GitHub.Scrapper.Business\RBL.GitHub.Scrapper.Business.csproj", "{10FE4075-384D-4184-88ED-494197ED1DC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.Domain", "RBL.GitHub.Scrapper.Domain\RBL.GitHub.Scrapper.Domain.csproj", "{E99E6971-98D3-466B-8262-86A347A380CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBL.GitHub.Scrapper.ViewModels", "RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj", "{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9528878-85CB-4E9E-9352-DD0336D9F4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9528878-85CB-4E9E-9352-DD0336D9F4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9528878-85CB-4E9E-9352-DD0336D9F4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9528878-85CB-4E9E-9352-DD0336D9F4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FE4075-384D-4184-88ED-494197ED1DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FE4075-384D-4184-88ED-494197ED1DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FE4075-384D-4184-88ED-494197ED1DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FE4075-384D-4184-88ED-494197ED1DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99E6971-98D3-466B-8262-86A347A380CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99E6971-98D3-466B-8262-86A347A380CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99E6971-98D3-466B-8262-86A347A380CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99E6971-98D3-466B-8262-86A347A380CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AA8E8DE-61F5-4E1D-A012-956BA3A636E0}
+	EndGlobalSection
+EndGlobal
