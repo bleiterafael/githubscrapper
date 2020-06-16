@@ -1,9 +1,0 @@
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\bin\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.deps.json
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\bin\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.dll
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\bin\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.pdb
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.csprojAssemblyReference.cache
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.csproj.CoreCompileInputs.cache
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.AssemblyInfoInputs.cache
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.AssemblyInfo.cs
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.dll
-C:\Users\RAFAEL\source\repos\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper\RBL.GitHub.Scrapper.Domain\obj\Debug\netcoreapp3.1\RBL.GitHub.Scrapper.Domain.pdb
