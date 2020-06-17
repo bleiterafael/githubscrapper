@@ -28,6 +28,7 @@ Request:
 <img src="https://i.imgur.com/jLd0fVs.png"></img><br/>
 
 Response:
+```
 {
     "success": true,
     "data": {
@@ -84,5 +85,5 @@ Response:
         ]
     }
 }
-
+```
 
