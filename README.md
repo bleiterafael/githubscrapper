@@ -24,4 +24,65 @@ Form-Data:
  - navigateSubFolders (optional, default=true): tells to API navigate into all folders from GitHub Repository
 Response: Json with relevant data
 
+Request:
+<blockquote class="imgur-embed-pub" lang="en" data-id="jLd0fVs"><a href="//imgur.com/jLd0fVs">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+Response:
+{
+    "success": true,
+    "data": {
+        "gitHubRepository": "https://github.com/bleiterafael/githubscrapper",
+        "totalFiles": 35,
+        "totalLines": 1166,
+        "totalSize": 1237473,
+        "totalSizeDescription": "1237473 bytes",
+        "lastUpdate": "2020-06-17T07:11:42+00:00",
+        "processTime": "0.3801434 s",
+        "scrappingItems": [
+            {
+                "extension": "cs",
+                "totalFiles": 25,
+                "totalLines": 979,
+                "totalSize": 945163,
+                "totalSizeDescription": "945163 bytes"
+            },
+            {
+                "extension": "csproj",
+                "totalFiles": 4,
+                "totalLines": 55,
+                "totalSize": 1473,
+                "totalSizeDescription": "1473 bytes"
+            },
+            {
+                "extension": "json",
+                "totalFiles": 3,
+                "totalLines": 49,
+                "totalSize": 1140,
+                "totalSizeDescription": "1140 bytes"
+            },
+            {
+                "extension": "md",
+                "totalFiles": 1,
+                "totalLines": 27,
+                "totalSize": 14336,
+                "totalSizeDescription": "14336 bytes"
+            },
+            {
+                "extension": "sln",
+                "totalFiles": 1,
+                "totalLines": 43,
+                "totalSize": 274432,
+                "totalSizeDescription": "274432 bytes"
+            },
+            {
+                "extension": "user",
+                "totalFiles": 1,
+                "totalLines": 13,
+                "totalSize": 929,
+                "totalSizeDescription": "929 bytes"
+            }
+        ]
+    }
+}
+
 
