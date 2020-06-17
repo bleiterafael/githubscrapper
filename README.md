@@ -17,9 +17,9 @@ Requirements
 - Below, you can see the API contract available to scrap a gitHub repository:
 
 Method API Scrapping 
-URL: http://rbl-github-scrapping.us-west-2.elasticbeanstalk.com/api/scrapping/
-Method: POST
-Form-Data: 
+URL: http://rbl-github-scrapping.us-west-2.elasticbeanstalk.com/api/scrapping <br/>
+Method: POST <br/>
+Form-Data: <br/>
  - gitHubRepository: Full GitHub Repository URL (https://github.com/bleiterafael/githubscrapper for example)
  - navigateSubFolders (optional, default=true): tells to API navigate into all folders from GitHub Repository
 Response: Json with relevant data
