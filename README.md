@@ -25,7 +25,7 @@ Form-Data:
 Response: Json with relevant data
 
 Request:
-<blockquote class="imgur-embed-pub" lang="en" data-id="jLd0fVs"><a href="//imgur.com/jLd0fVs">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src="https://i.imgur.com/jLd0fVs.png"></img><br/>
 
 Response:
 {
