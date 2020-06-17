@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -22,17 +23,17 @@ namespace RBL.GitHub.Scrapper.API.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"SCRAPPING GITHUB API";
+            return $"SCRAPPING GITHUB API - Rafael Batista Leite - {Path.Combine("", "App_Data")}";
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromForm] string gitHubRepository=null)
+        public async Task<ActionResult> Post([FromForm] string gitHubRepository=null,[FromForm] bool navigateSubFolders=true)
         {
             try
             {
                 if (!ModelState.IsValid) return CustomResponse(ModelState);
 
-                var scrappingInfo = await _scrapperService.ScrapeGitHub(gitHubRepository);
+                var scrappingInfo = await _scrapperService.ScrapeGitHub(gitHubRepository, navigateSubFolders);
 
                 return CustomResponse(scrappingInfo);
             }

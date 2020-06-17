@@ -5,8 +5,8 @@ namespace RBL.GitHub.Scrapper.Domain
 {
     public class GitHubFolder : GitHubItem
     {
-        public GitHubFolder(string name)
-            : base(name)
+        public GitHubFolder(string name,string urlAttribute)
+            : base(name,urlAttribute)
         {
         }
 

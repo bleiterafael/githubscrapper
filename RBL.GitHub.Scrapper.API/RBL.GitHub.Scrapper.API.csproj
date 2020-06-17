@@ -14,5 +14,15 @@
     <ProjectReference Include="..\RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="App_Data\microsoft vscode-deploy-azure.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>

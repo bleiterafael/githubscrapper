@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.Busines
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.Domain", "RBL.GitHub.Scrapper.Domain\RBL.GitHub.Scrapper.Domain.csproj", "{E99E6971-98D3-466B-8262-86A347A380CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBL.GitHub.Scrapper.ViewModels", "RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj", "{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.ViewModels", "RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj", "{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
