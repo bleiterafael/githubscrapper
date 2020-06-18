@@ -24,7 +24,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
         private static SemaphoreSlim Throttler = new SemaphoreSlim(initialCount: 20);
         private static List<Task> AllTasks = new List<Task>();
         private static DateTime LastRequest = DateTime.Now;
-        private static TimeSpan IntervalRequests = new TimeSpan(0, 0, 0, 0, 300);
+        private static TimeSpan IntervalRequests = new TimeSpan(0, 0, 0, 0, 50);
 
         private readonly IMapper _mapper;
         public ScrapperService(INotifier notifier, IMapper mapper)
@@ -117,8 +117,16 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
                     var doc = CQ.CreateDocument(data);
                     var relativeTimeTag = doc["relative-time"];
-                    var relativeTime = relativeTimeTag.FirstElement().Attributes["datetime"];
-                    lastUpdate = Convert.ToDateTime(relativeTime);
+                    if(relativeTimeTag.Elements.Count() == 0)
+                    {
+                        relativeTimeTag = doc["time-ago"];
+                    }
+
+                    if (relativeTimeTag.Elements.Count() > 0)
+                    {
+                        var relativeTime = relativeTimeTag.FirstElement().Attributes["datetime"];
+                        lastUpdate = Convert.ToDateTime(relativeTime);
+                    }
                     response.Close();
                     readStream.Close();
                 }
@@ -178,14 +186,31 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
         private void Request(string url, ref HttpWebRequest request, ref HttpWebResponse response)
         {
-            Sleep();
-            lock (obj)
+            bool success = false;
+
+            // critical section -- avoiding Too much requests
+            while (!success)
             {
-                // critical section -- avoiding Too much requests
-                request = (HttpWebRequest)WebRequest.Create(url);
-                response = (HttpWebResponse)request.GetResponse();
-                LastRequest = DateTime.Now;
+                Sleep();
+
+                try
+                {
+                    //lock (obj)
+                    //{
+                    
+                    request = (HttpWebRequest)WebRequest.Create(url);
+                    response = (HttpWebResponse)request.GetResponse();
+                    LastRequest = DateTime.Now;
+                    success = true;
+                    //}
+                }
+                catch (Exception error)
+                {
+                    LastRequest = DateTime.Now.AddSeconds(3);
+                }
             }
+            
+            
         }
 
         private async Task<List<GitHubFile>> ProcessHTML(string url,bool navigateSubFolders=true)
