@@ -84,6 +84,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
         private async Task<DateTime> GetLastUpdate(string gitHubRepository)
         {
+            gitHubRepository = $"{gitHubRepository}/file-list/master";
             DateTime lastUpdate = DateTime.Now;
 
             int lines = 0;
@@ -117,6 +118,15 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
                     var element = doc["[datetime]"];
                     
+                    if(!element.Elements.Any())
+                    {
+                        element = doc["relative-time"];
+                    }
+                    if (!element.Elements.Any())
+                    {
+                        element = doc["time-ago"];
+                    }
+
                     var times = element.Elements.Where(c => c.Attributes.Any(at => at.Key == "datetime")).ToList();
                     var dates = new List<DateTime>();
                     times.ForEach(t =>
