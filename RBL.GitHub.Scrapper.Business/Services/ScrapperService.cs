@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using CsQuery;
 using CsQuery.ExtensionMethods;
-using CsQuery.Promises;
-using Newtonsoft.Json;
 using RBL.GitHub.Scrapper.Business.Interfaces;
 using RBL.GitHub.Scrapper.Domain;
 using RBL.GitHub.Scrapper.ViewModels.Models;
@@ -55,7 +53,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
                     bool needLoadData = true;
                     if (scrappingInfoViewModel != null)
                     {
-                        needLoadData = lastUpdate != scrappingInfoViewModel.LastUpdate;
+                        needLoadData = lastUpdate > scrappingInfoViewModel.LastUpdate;
 
                         if (!needLoadData)
                         {
@@ -116,16 +114,20 @@ namespace RBL.GitHub.Scrapper.Business.Services
                     string data = readStream.ReadToEnd();
 
                     var doc = CQ.CreateDocument(data);
-                    var relativeTimeTag = doc["relative-time"];
-                    if(relativeTimeTag.Elements.Count() == 0)
-                    {
-                        relativeTimeTag = doc["time-ago"];
-                    }
 
-                    if (relativeTimeTag.Elements.Count() > 0)
+                    var element = doc["[datetime]"];
+                    
+                    var times = element.Elements.Where(c => c.Attributes.Any(at => at.Key == "datetime")).ToList();
+                    var dates = new List<DateTime>();
+                    times.ForEach(t =>
                     {
-                        var relativeTime = relativeTimeTag.FirstElement().Attributes["datetime"];
-                        lastUpdate = Convert.ToDateTime(relativeTime);
+                        var dateStr = t.Attributes["datetime"];
+                        var date = Convert.ToDateTime(dateStr);
+                        dates.Add(date);
+                    });
+                    if (dates.Any())
+                    {
+                        lastUpdate = dates.Max();
                     }
                     response.Close();
                     readStream.Close();
