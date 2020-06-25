@@ -9,6 +9,6 @@ namespace RBL.GitHub.Scrapper.Business.Interfaces
 {
     public interface IScrapperService
     {
-        Task<ScrappingInfoViewModel> ScrapeGitHub(string gitHubRepository,bool navigateSubFolders);
+        Task<ScrappingInfoViewModel> ScrapeGitHub(string gitHubRepository,bool navigateSubFolders=true);
     }
 }

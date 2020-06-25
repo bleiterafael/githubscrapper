@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.Domain"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBL.GitHub.Scrapper.ViewModels", "RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj", "{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBL.GitHub.Scrapper.Tests2", "RBL.GitHub.Scrapper.Tests\RBL.GitHub.Scrapper.Tests2.csproj", "{D550B005-9D9B-4CC1-9BC4-0E5647E4426A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBL.GitHub.Scrapper.ScrappingTests", "RBL.GitHub.Scrapper.ScrappingTests\RBL.GitHub.Scrapper.ScrappingTests.csproj", "{C92EAB5B-6A3D-404C-973D-0612C68FA6C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A5A1237-2E26-42ED-AADA-6A2EB7C26AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D550B005-9D9B-4CC1-9BC4-0E5647E4426A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D550B005-9D9B-4CC1-9BC4-0E5647E4426A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D550B005-9D9B-4CC1-9BC4-0E5647E4426A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D550B005-9D9B-4CC1-9BC4-0E5647E4426A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92EAB5B-6A3D-404C-973D-0612C68FA6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92EAB5B-6A3D-404C-973D-0612C68FA6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92EAB5B-6A3D-404C-973D-0612C68FA6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92EAB5B-6A3D-404C-973D-0612C68FA6C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

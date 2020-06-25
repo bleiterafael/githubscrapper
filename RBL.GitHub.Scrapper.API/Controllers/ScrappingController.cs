@@ -23,7 +23,7 @@ namespace RBL.GitHub.Scrapper.API.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"SCRAPPING GITHUB API - Rafael Batista Leite - {Path.Combine("", "App_Data")}";
+            return $"SCRAPPING GITHUB API - Rafael Batista Leite";
         }
 
         [HttpPost]

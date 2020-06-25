@@ -36,7 +36,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
         }
 
         
-        public async Task<ScrappingInfoViewModel> ScrapeGitHub(string gitHubRepository, bool navigateSubFolders)
+        public async Task<ScrappingInfoViewModel> ScrapeGitHub(string gitHubRepository, bool navigateSubFolders=true)
         {
             if(this.Validate(gitHubRepository))
             {
@@ -242,7 +242,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
 
                     var doc = CQ.CreateDocument(data);
-                    var table = doc[".files"];
+                    var table = doc["[role=\"grid\"]"];
                     gitHubFiles = await this.ProcessTable(table, navigateSubFolders);
                     
                     response.Close();
@@ -264,8 +264,8 @@ namespace RBL.GitHub.Scrapper.Business.Services
         private async Task<List<GitHubFile>> ProcessTable(CQ tableFiles, bool navigateSubFolders = true)
         {
             List<GitHubFile> items = new List<GitHubFile>();
-            var tableBody = tableFiles["tbody"].First();
-            var rows = tableBody["tr"].ToList();
+            //var tableBody = tableFiles["tbody"].First();
+            var rows = tableFiles["[role=\"row\"]"].ToList();
 
             List<GitHubItem> gitHubItems = new List<GitHubItem>();
             foreach (var row in rows)
@@ -294,7 +294,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
             var columns = row.ChildElements;
             if (columns != null)
             {
-                var iconColumn = columns.FirstOrDefault(c => c.Classes.Any(cl => cl == "icon"));
+                var iconColumn = columns.FirstOrDefault(c => c.Attributes.Any(at => at.Key == "role" && at.Value=="gridcell"));
                 if (iconColumn != null)
                 {
                     var svgElement = iconColumn.ChildElements.FirstOrDefault(c => c.NodeName.ToUpper() == "SVG");
@@ -302,7 +302,8 @@ namespace RBL.GitHub.Scrapper.Business.Services
                     {
                         isFile = svgElement.Classes.Any(c => c == "octicon-file");
 
-                        var contentColumn = columns.FirstOrDefault(c => c.Classes.Any(cl => cl == "content"));
+                        //var contentColumn = columns.FirstOrDefault(c => c.Classes.Any(cl => cl == "content"));
+                        var contentColumn = columns.FirstOrDefault(c => c.Attributes.Any(at => at.Key == "role" && at.Value == "rowheader")); ;
                         if (contentColumn != null)
                         {
                             if (isFile)
