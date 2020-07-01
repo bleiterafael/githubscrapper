@@ -13,6 +13,7 @@ Requirements
 - This API is written using async functions and multithreading methods;
 - In general, first request takes some time to extract information from all files of GitHub repository. However, subsequent requests are returned immediately;
 - This API is based in a DDD Pattern to structure project layers;
+- This API project contains automated tests
 - This API is deployed to Amazon AWS Elastic Beamstalk cloud provider;
 - Below, you can see the API contract available to scrap a gitHub repository:
 

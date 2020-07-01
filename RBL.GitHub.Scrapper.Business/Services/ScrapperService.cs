@@ -73,6 +73,14 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
                     return scrappingInfoViewModel;
                 }
+                catch (WebException error)
+                {
+                    var statusCode = (error.Response as HttpWebResponse)?.StatusCode;
+                    if (statusCode == HttpStatusCode.NotFound)
+                        base.Notify($"Repository '{gitHubRepository}' not found");
+                    else
+                        base.Notify(error.Message);
+                }
                 catch (Exception error)
                 {
                     base.Notify(error.Message);
@@ -212,18 +220,23 @@ namespace RBL.GitHub.Scrapper.Business.Services
 
                 try
                 {
-                    //lock (obj)
-                    //{
-                    
                     request = (HttpWebRequest)WebRequest.Create(url);
                     response = (HttpWebResponse)request.GetResponse();
                     LastRequest = DateTime.Now;
                     success = true;
-                    //}
+                }
+                catch (WebException ex)
+                {
+                    var statusCode = (ex.Response as HttpWebResponse)?.StatusCode;
+                    if (statusCode == HttpStatusCode.NotFound)
+                        throw ex;
+
+                    if(statusCode == HttpStatusCode.TooManyRequests)
+                        LastRequest = DateTime.Now.AddSeconds(3);
                 }
                 catch (Exception error)
                 {
-                    LastRequest = DateTime.Now.AddSeconds(3);
+                    throw error;
                 }
             }
             

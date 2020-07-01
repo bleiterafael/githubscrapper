@@ -72,6 +72,21 @@ namespace RBL.GitHub.Scrapper.Tests
         }
 
         [Fact]
+        public async Task TestNotFoundRepository()
+        {
+            //Arrange
+            string gitHubRepository = "https://github.com/lsjghsdjfd";
+            bool navigateSubFolders = false;
+
+            //Act
+            var response = await PostScrapping(gitHubRepository, navigateSubFolders);
+
+            //Assert
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+            await AssertExpectedJson(response, $"Repository '{gitHubRepository}' not found");
+        }
+
+        [Fact]
         public async Task TestValidDomainRepository()
         {
             //Arrange
