@@ -160,6 +160,11 @@ namespace RBL.GitHub.Scrapper.Business.Services
                 retorno = false;
                 this.Notify("Undefined repository");
             }
+            else if (!gitHubRepository.StartsWith("https://github.com/"))
+            {
+                retorno = false;
+                this.Notify($"{gitHubRepository} does not belong a https://github.com/{{repository}} domain");
+            }
 
             return retorno;
         }

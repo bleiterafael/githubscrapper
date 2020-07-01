@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RBL.GitHub.Scrapper.Business.Interfaces;
 
@@ -31,6 +32,8 @@ namespace RBL.GitHub.Scrapper.API.Controllers
         {
             try
             {
+                HttpRequest req = this.Request;
+
                 if (!ModelState.IsValid) return CustomResponse(ModelState);
 
                 var scrappingInfo = await _scrapperService.ScrapeGitHub(gitHubRepository, navigateSubFolders);
@@ -39,8 +42,8 @@ namespace RBL.GitHub.Scrapper.API.Controllers
             }
             catch (Exception error)
             {
-
-                throw;
+                NotifyError(error.Message);
+                return CustomResponse();
             }
             
         }

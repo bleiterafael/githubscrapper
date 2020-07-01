@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj": {}
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj",
         "projectName": "RBL.GitHub.Scrapper.API",
-        "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
               },
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj",
         "projectName": "RBL.GitHub.Scrapper.Business",
-        "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -105,8 +105,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj": {
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj",
         "projectName": "RBL.GitHub.Scrapper.Domain",
-        "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -203,14 +203,14 @@
         }
       }
     },
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj": {
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
         "projectName": "RBL.GitHub.Scrapper.Tests2",
-        "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -229,11 +229,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj"
               },
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
               }
             }
           }
@@ -294,14 +294,14 @@
         }
       }
     },
-    "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
+    "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj",
         "projectName": "RBL.GitHub.Scrapper.ViewModels",
-        "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\RBL.GitHub.Scrapper.ViewModels.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.ViewModels\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -320,8 +320,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj": {
-                "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj"
+              "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj": {
+                "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Domain\\RBL.GitHub.Scrapper.Domain.csproj"
               }
             }
           }

@@ -4696,11 +4696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
+      "projectUniqueName": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
       "projectName": "RBL.GitHub.Scrapper.Tests2",
-      "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
+      "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\RBL.GitHub.Scrapper.Tests2.csproj",
       "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Tests\\obj\\",
+      "outputPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4719,11 +4719,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
-              "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj"
+            "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj": {
+              "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.API\\RBL.GitHub.Scrapper.API.csproj"
             },
-            "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
-              "projectPath": "C:\\Users\\RAFAEL\\source\\repos\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
+            "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj": {
+              "projectPath": "C:\\Users\\RAFAEL\\Documents\\GitHub\\githubscrapper\\RBL.GitHub.Scrapper.Business\\RBL.GitHub.Scrapper.Business.csproj"
             }
           }
         }
