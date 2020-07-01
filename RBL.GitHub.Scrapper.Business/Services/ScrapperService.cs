@@ -230,9 +230,10 @@ namespace RBL.GitHub.Scrapper.Business.Services
                     var statusCode = (ex.Response as HttpWebResponse)?.StatusCode;
                     if (statusCode == HttpStatusCode.NotFound)
                         throw ex;
-
-                    if(statusCode == HttpStatusCode.TooManyRequests)
+                    else if (statusCode == HttpStatusCode.TooManyRequests)
                         LastRequest = DateTime.Now.AddSeconds(3);
+                    else
+                        throw ex;
                 }
                 catch (Exception error)
                 {
