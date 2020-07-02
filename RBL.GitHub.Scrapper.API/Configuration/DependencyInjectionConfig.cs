@@ -2,6 +2,8 @@
 using RBL.GitHub.Scrapper.Business.Interfaces;
 using RBL.GitHub.Scrapper.Business.Notifications;
 using RBL.GitHub.Scrapper.Business.Services;
+using RBL.GitHub.Scrapper.Data.EF.IRepositories;
+using RBL.GitHub.Scrapper.Data.EF.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,10 @@ namespace RBL.GitHub.Scrapper.API.Configuration
         private static void AddServicesRepositories(this IServiceCollection services)
         {
             services.AddScoped<IScrapperService, ScrapperService>();
+            services.AddScoped<IScrappingInfoRepository, ScrappingInfoRepository>();
+            services.AddScoped<IScrappingInfoExtensionRepository, ScrappingInfoExtensionRepository>();
+            services.AddScoped<IScrappingInfoService, ScrappingInfoService>();
+            services.AddScoped<IScrappingInfoExtensionService, ScrappingInfoExtensionService>();
         }
         private static void AddNotifications(this IServiceCollection services)
         {

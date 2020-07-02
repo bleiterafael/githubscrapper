@@ -8,6 +8,6 @@ namespace RBL.GitHub.Scrapper.ViewModels.Models
     {
         public ExtensionViewModel Extension { get; set; }
         public int Lines { get; set; }
-        public long Size { get; set; }
+        public decimal Size { get; set; }
     }
 }

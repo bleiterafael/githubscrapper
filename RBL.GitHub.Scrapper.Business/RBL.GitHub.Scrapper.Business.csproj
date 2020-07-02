@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RBL.GitHub.Scrapper.Data.EF\RBL.GitHub.Scrapper.Data.EF.csproj" />
     <ProjectReference Include="..\RBL.GitHub.Scrapper.ViewModels\RBL.GitHub.Scrapper.ViewModels.csproj" />
   </ItemGroup>
 

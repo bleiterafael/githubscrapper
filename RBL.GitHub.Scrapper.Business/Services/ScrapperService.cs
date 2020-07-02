@@ -2,6 +2,7 @@
 using CsQuery;
 using CsQuery.ExtensionMethods;
 using RBL.GitHub.Scrapper.Business.Interfaces;
+using RBL.GitHub.Scrapper.Data.EF.IRepositories;
 using RBL.GitHub.Scrapper.Domain;
 using RBL.GitHub.Scrapper.ViewModels.Models;
 using System;
@@ -17,20 +18,17 @@ namespace RBL.GitHub.Scrapper.Business.Services
 {
     public class ScrapperService : NotificationService, IScrapperService
     {
-        private static List<ScrappingInfoViewModel> scrappings;
-        private static readonly Object obj = new Object();
-        private static SemaphoreSlim Throttler = new SemaphoreSlim(initialCount: 20);
-        private static List<Task> AllTasks = new List<Task>();
         private static DateTime LastRequest = DateTime.Now;
         private static TimeSpan IntervalRequests = new TimeSpan(0, 0, 0, 0, 50);
 
         private readonly IMapper _mapper;
-        public ScrapperService(INotifier notifier, IMapper mapper)
+        private readonly IScrappingInfoRepository _scrappingInfoRepository;
+        public ScrapperService(INotifier notifier, IMapper mapper,
+            IScrappingInfoRepository scrappingInfoRepository)
             : base(notifier)
         {
             _mapper = mapper;
-            if (scrappings == null)
-                scrappings = new List<ScrappingInfoViewModel>();
+            _scrappingInfoRepository = scrappingInfoRepository;
         }
 
         
@@ -40,36 +38,45 @@ namespace RBL.GitHub.Scrapper.Business.Services
             {
                 try
                 {
-                    
                     ScrappingInfoViewModel scrappingInfoViewModel = null;
+                    ScrappingInfo scrappingInfo = null;
 
                     DateTime startTime = DateTime.Now;
                     DateTime endTime;
                     TimeSpan processingTime;
 
-                    scrappingInfoViewModel = scrappings.FirstOrDefault(s => s.GitHubRepository == gitHubRepository);
+                    scrappingInfo = (await _scrappingInfoRepository.GetAsync(s => s.GitHubRepository == gitHubRepository)).FirstOrDefault();
+                        
                     DateTime lastUpdate = await GetLastUpdate(gitHubRepository);
-
+                    bool needDeleteCurrentScrappingInfo = false;
                     bool needLoadData = true;
-                    if (scrappingInfoViewModel != null)
+                    if (scrappingInfo != null)
                     {
-                        needLoadData = lastUpdate > scrappingInfoViewModel.LastUpdate;
+                        needLoadData = lastUpdate > scrappingInfo.LastUpdate;
 
                         if (!needLoadData)
                         {
                             endTime = DateTime.Now;
                             processingTime = endTime - startTime;
-                            scrappingInfoViewModel.SetProcessTime(processingTime);
+                            scrappingInfo.SetProcessTime(processingTime);
+                            scrappingInfoViewModel = _mapper.Map<ScrappingInfoViewModel>(scrappingInfo);
                             return scrappingInfoViewModel;
                         }
+                        needDeleteCurrentScrappingInfo = true;
                     }
 
-                    List<GitHubFileViewModel> gitHubFiles = await GetGitHubFiles(gitHubRepository, navigateSubFolders);
+                    List<GitHubFile> gitHubFiles = await GetGitHubFiles(gitHubRepository, navigateSubFolders);
                     endTime = DateTime.Now;
                     processingTime = endTime - startTime;
-                    scrappingInfoViewModel = new ScrappingInfoViewModel(gitHubRepository, gitHubFiles, lastUpdate, processingTime);
 
-                    scrappings.Add(scrappingInfoViewModel);
+                    if (needDeleteCurrentScrappingInfo)
+                        await _scrappingInfoRepository.DeleteAsync(scrappingInfo);
+
+                    scrappingInfo = new ScrappingInfo(gitHubRepository, gitHubFiles, lastUpdate, processingTime);
+
+                    await _scrappingInfoRepository.AddAsync(scrappingInfo);
+                    scrappingInfoViewModel = _mapper.Map<ScrappingInfoViewModel>(scrappingInfo);
+                    
 
                     return scrappingInfoViewModel;
                 }
@@ -177,9 +184,9 @@ namespace RBL.GitHub.Scrapper.Business.Services
             return retorno;
         }
 
-        private async Task<List<GitHubFileViewModel>> GetGitHubFiles(string gitHubRepository,bool navigateSubFolders=true)
+        private async Task<List<GitHubFile>> GetGitHubFiles(string gitHubRepository,bool navigateSubFolders=true)
         {
-            List<GitHubFileViewModel> gitHubFiles = new List<GitHubFileViewModel>();
+            List<GitHubFile> gitHubFiles = new List<GitHubFile>();
 
             var files = await this.ProcessHTML(gitHubRepository,navigateSubFolders);
 
@@ -195,7 +202,7 @@ namespace RBL.GitHub.Scrapper.Business.Services
             }
             await Task.WhenAll(ProcessFiles());
 
-            gitHubFiles = _mapper.Map<IEnumerable<GitHubFileViewModel>>(files).ToList();
+            gitHubFiles = files;
 
             return gitHubFiles;
         }

@@ -15,6 +15,8 @@ namespace RBL.GitHub.Scrapper.ViewModels.Mapper
             CreateMap<GitHubItem, GitHubItemViewModel>().ReverseMap();
             CreateMap<GitHubFile, GitHubFileViewModel>().ReverseMap();
             CreateMap<GitHubFolder, GitHubFolderViewModel>().ReverseMap();
+            CreateMap<ScrappingInfo, ScrappingInfoViewModel>().ReverseMap();
+            CreateMap<ScrappingInfoExtension, ScrappingInfoExtensionViewModel>().ReverseMap();
         }
     }
 }
